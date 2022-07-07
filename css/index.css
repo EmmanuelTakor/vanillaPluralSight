@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  height: 300vh;
+  background-color: black;
+}
+
+#one {
+  height: 70vh;
+  width: 100%;
+}
+#one img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-color: black;
+}
+#one article {
+  color: white;
+  width: 50vw;
+  height: 40vh;
+  position: absolute;
+  top: 32%;
+  left: 27%;
+}
+#one article .centralize {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#one article .centralizeSub {
+  width: 35vw;
+}
+#one article #firstSubSection {
+  font-size: 320%;
+  margin-bottom: 6%;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#one article #firstSubSection #switchText:before {
+  color: white;
+  content: "Workflows";
+  animation-name: switcher;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+#one article #ThirdSubSection {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#one article #ThirdSubSection .buttonSection {
+  width: 22vw;
+  justify-content: space-between;
+}
+#one article #ThirdSubSection .buttonSection button {
+  padding: 18 40;
+}
+
+.NavZero {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  height: 90%;
+}
+
+#zero {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(15, 15, 15, 0.932);
+}
+#zero .NavOne, #zero .NavTwo {
+  width: 50%;
+  height: 90%;
+  background-position: center;
+}
+#zero .NavOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#zero .NavOne a {
+  text-decoration: none;
+  color: white;
+}
+#zero .NavOne img {
+  height: 5vh;
+  background-color: black;
+}
+#zero .NavOne .pluralSightLogo {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 7vh;
+  width: 25%;
+  background-image: url("/assets/PS_logo_F-11.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: contain;
+  background-position: 80 25%;
+}
+#zero .NavTwo {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#zero .NavTwo .NavTwoSubTwo {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+#zero .NavTwo .one {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+#zero .NavTwo .second {
+  padding: 15 30;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+}
+
+.view {
+  background-image: linear-gradient(to right, rgba(219, 109, 19, 0.932), rgb(238, 20, 122));
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.transparent {
+  font-weight: bolder;
+  color: white;
+  border: 1px solid white;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  background-color: transparent;
+}
+
+#FifthSubSection {
+  margin-top: 3vh;
+  margin-right: 20%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+#FifthSubSection div {
+  height: 2vh;
+}
+#FifthSubSection #adp {
+  height: 4vh;
+}
+#FifthSubSection #fujitsu {
+  height: 4vh;
+}
+#FifthSubSection #nasdaq {
+  height: 3vh;
+}
+
+@keyframes switcher {
+  0% {
+    content: "teams";
+  }
+  10% {
+    content: "Skills";
+  }
+  20% {
+    content: "Processes";
+  }
+  30% {
+    content: "Workflows";
+  }
+  40% {
+    content: "Products";
+  }
+  50% {
+    content: "teams";
+  }
+  60% {
+    content: "Skills";
+  }
+  70% {
+    content: "Processes";
+  }
+  80% {
+    content: "Workflows";
+  }
+  90% {
+    content: "Products";
+  }
+  100% {
+    content: "Skills";
+  }
+}
+@media screen and (max-width: 1900) {
+  .NavTwoSubTwo {
+    margin-top: 20%;
+    color: green;
+  }
+}
+@media screen and (max-width: 900) {
+  #backgroundImage {
+    display: none;
+  }
+}
+@media screen and (max-width: 1900) {
+  .NavTwoSubTwo {
+    margin-top: 30%;
+  }
+}

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 main{
@@ -13,6 +14,7 @@ main{
 #one{
     height: 70vh;
     width: 100%;
+    position: relative;
    
     img {
         // background
@@ -20,6 +22,9 @@ main{
         width: 100%;
         max-width: 100%;
         background-color: black;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
     article{
         color: white;
@@ -27,7 +32,7 @@ main{
         height: 40vh;
         position: absolute;
         top: 32%;
-        left: 27%;
+        left: 23%;
 
         .centralize{
             width: 100%;
@@ -36,12 +41,30 @@ main{
         }
         .centralizeSub{
             width: 35vw;
+            @media screen and (max-width:900px){
+                width: 70vw;
+            }
         }
         #firstSubSection{
+            // margin-left: 10%;
+            width: inherit;
             font-size:320%;
             margin-bottom: 6%;
             font-weight: 700;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            @media screen and (max-width:1700px) {
+                font-size: 200%;
+                // margin-left: 25%;
+            }
+            @media screen and (max-width:1600px) {
+                font-size: 200%;
+                // margin-left: 12%;
+            }
+            @media screen and (max-width:950px) {
+                font-size: 150%;
+                margin-left: 1%;
+            }
+            
             #switchText:before{
                 color: white;
                 content: 'Workflows';
@@ -56,20 +79,56 @@ main{
 
             }
         }
+        #SecondSubSection{
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            @media screen {
+                
+            }
+        }
         
         #ThirdSubSection{
             height: 20vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width:1600px){
+                margin-top: 10%;
+                }
+                @media screen and (max-width:1000px){
+                    width: 100%;
+                    }
 
             .buttonSection{
                 width: 22vw;
                 // display: flex;
                 justify-content: space-between;
+                @media screen and (max-width:1600px) {
+                    width: 30vw;
+                }
+                @media screen and (max-width:1150px) {
+                    width: 30vw;
+                }
+                @media screen and (max-width:1100px) {
+                    width: 100vw;
+                }
+
+
                 button{
                     // display: block;
-                    padding: 18 40;
+                    padding: 5% 40;
+
+                    @media screen and (max-width:1150px) {
+                        padding: 5% 10%;
+                    }
+
+                    @media screen and (max-width:1150px) {
+                        padding: 3% 7%;
+                    }
+                    @media screen and (max-width:950px) {
+                        padding: 7% 15%;
+                    }
                 }
             }
         }
@@ -99,6 +158,9 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width:1733px) {
+            display:none
+        }
         a{
             text-decoration: none;
             color: white;
@@ -110,7 +172,6 @@ main{
         .pluralSightLogo{
             display: flex;
             justify-content: center;
-            border: 1px solid black;
             height: 7vh;
             width: 25%;
             background-image: url("/assets/PS_logo_F-11.png");
@@ -125,6 +186,9 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width:1450px) {
+            display: none;
+        }
 
         .NavTwoSubTwo{
             width: 80%;
@@ -142,6 +206,7 @@ main{
             background-color: transparent;
             color: white;
             font-weight: 700;
+            box-sizing:border-box;
         }
     }
 
@@ -162,6 +227,11 @@ main{
     margin-bottom: 15%;
     background-color: transparent;
 }
+#FourthSubSection{
+    @media screen and (max-width:900px){
+        display: none;
+    }
+}
 #FifthSubSection{
     margin-top: 3vh;
     margin-right: 20%;
@@ -181,6 +251,9 @@ main{
     }
     #nasdaq{
         height: 3vh;
+    }
+    @media screen and (max-width:1450px) {
+        display: none;
     }
 }
 
@@ -232,11 +305,11 @@ content: "Products";
 }
 @media screen and (max-width:900){
     #backgroundImage{
-display: none;
+display: none !important;
     }
 }
-@media screen and (max-width:1900){
-    .NavTwoSubTwo{
-        margin-top: 30%;
+@media screen and (max-width:800){
+    body{
+       text-align: center;
     }
 }

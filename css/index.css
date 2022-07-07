@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 main {
@@ -13,6 +14,7 @@ main {
 #one {
   height: 70vh;
   width: 100%;
+  position: relative;
 }
 #one img {
   height: 100%;
@@ -20,13 +22,18 @@ main {
   max-width: 100%;
   background-color: black;
 }
+@media screen and (max-width: 900px) {
+  #one img {
+    display: none;
+  }
+}
 #one article {
   color: white;
   width: 50vw;
   height: 40vh;
   position: absolute;
   top: 32%;
-  left: 27%;
+  left: 23%;
 }
 #one article .centralize {
   width: 100%;
@@ -36,11 +43,33 @@ main {
 #one article .centralizeSub {
   width: 35vw;
 }
+@media screen and (max-width: 900px) {
+  #one article .centralizeSub {
+    width: 70vw;
+  }
+}
 #one article #firstSubSection {
+  width: inherit;
   font-size: 320%;
   margin-bottom: 6%;
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 1700px) {
+  #one article #firstSubSection {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  #one article #firstSubSection {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #one article #firstSubSection {
+    font-size: 150%;
+    margin-left: 1%;
+  }
 }
 #one article #firstSubSection #switchText:before {
   color: white;
@@ -51,18 +80,63 @@ main {
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
+#one article #SecondSubSection {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
 #one article #ThirdSubSection {
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1600px) {
+  #one article #ThirdSubSection {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #one article #ThirdSubSection {
+    width: 100%;
+  }
+}
 #one article #ThirdSubSection .buttonSection {
   width: 22vw;
   justify-content: space-between;
 }
+@media screen and (max-width: 1600px) {
+  #one article #ThirdSubSection .buttonSection {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #one article #ThirdSubSection .buttonSection {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #one article #ThirdSubSection .buttonSection {
+    width: 100vw;
+  }
+}
 #one article #ThirdSubSection .buttonSection button {
-  padding: 18 40;
+  padding: 5% 40;
+}
+@media screen and (max-width: 1150px) {
+  #one article #ThirdSubSection .buttonSection button {
+    padding: 5% 10%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #one article #ThirdSubSection .buttonSection button {
+    padding: 3% 7%;
+  }
+}
+@media screen and (max-width: 950px) {
+  #one article #ThirdSubSection .buttonSection button {
+    padding: 7% 15%;
+  }
 }
 
 .NavZero {
@@ -92,6 +166,11 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1733px) {
+  #zero .NavOne {
+    display: none;
+  }
+}
 #zero .NavOne a {
   text-decoration: none;
   color: white;
@@ -103,7 +182,6 @@ main {
 #zero .NavOne .pluralSightLogo {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   height: 7vh;
   width: 25%;
   background-image: url("/assets/PS_logo_F-11.png");
@@ -117,6 +195,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1450px) {
+  #zero .NavTwo {
+    display: none;
+  }
 }
 #zero .NavTwo .NavTwoSubTwo {
   width: 80%;
@@ -134,6 +217,7 @@ main {
   background-color: transparent;
   color: white;
   font-weight: 700;
+  box-sizing: border-box;
 }
 
 .view {
@@ -150,6 +234,12 @@ main {
   margin-top: 5%;
   margin-bottom: 15%;
   background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+  #FourthSubSection {
+    display: none;
+  }
 }
 
 #FifthSubSection {
@@ -170,6 +260,11 @@ main {
 }
 #FifthSubSection #nasdaq {
   height: 3vh;
+}
+@media screen and (max-width: 1450px) {
+  #FifthSubSection {
+    display: none;
+  }
 }
 
 @keyframes switcher {
@@ -215,11 +310,11 @@ main {
 }
 @media screen and (max-width: 900) {
   #backgroundImage {
-    display: none;
+    display: none !important;
   }
 }
-@media screen and (max-width: 1900) {
-  .NavTwoSubTwo {
-    margin-top: 30%;
+@media screen and (max-width: 800) {
+  body {
+    text-align: center;
   }
 }
